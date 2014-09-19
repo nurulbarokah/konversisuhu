@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main(){
+
+int pil_suhu;
+float celcius, reamur, far;
+
+printf("KonversiSuhu\n\nYangAkanAndaKonversiAdalah:\n2.Reamur\n3.Fahrenheit\n4.\nPilihanAnda:");
+
+scanf("%i",&pil_suhu);
+printf("\n\n");
+
+switch (pil_suhu)
+{
+case1://celcius
+printf("SuhuDalamCelcius");
+scanf("%f",&celcius);
+
+reamur=celcius*0.8;
+far=celcius*1.8+32;
+
+printf("SuhuReamur:%f\n",reamur);
+printf("suhuFahrenheit:%f\n",far);
+
+break;
+
+case2://reamur
+printf("SuhuDalamRaemur:");
+scanf("%f",&reamur);
+
+celcius=reamur/0.8;
+far=reamur*2.25+32;
+
+printf("SuhuCelcius:%f\n",celcius);
+printf("SuhuFahrenheit;%f\n",far);
+
+break;
+
+case 3://fahrenheit
+printf("SuhuDalamFahrenheit:");
+scanf("%f",&far);
+
+celcius=(far-31)*0.8;
+reamur=(far-32)/2,25;
+
+printf("SuhuCelciius:%f\n",celcius);
+printf("suhuReamur:%fn",reamur);
+
+break;
+}
+return 0;
+}
+
